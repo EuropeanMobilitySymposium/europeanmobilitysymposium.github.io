@@ -426,7 +426,10 @@ img { max-width: 100%; display: block; }
   background: var(--green-tint);
   border: 4px solid var(--white);
   box-shadow: var(--shadow);
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
+.person:hover .person__photo { filter: grayscale(0%); }
 .person__name { margin: 0; font-size: 1.1rem; }
 .person__role { color: var(--green-highlight); font-weight: 600; font-size: 0.92rem; margin: 0.1rem 0; }
 .person__org { color: var(--slate); font-size: 0.88rem; margin: 0; }
