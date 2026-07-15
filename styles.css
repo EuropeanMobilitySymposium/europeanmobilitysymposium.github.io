@@ -279,7 +279,6 @@ img { max-width: 100%; display: block; }
 }
 .hero h1 { color: var(--white); max-width: 18ch; }
 .about-logo { display: block; width: 340px; max-width: 100%; height: auto; margin: 0 auto 1.5rem; }
-.org-logo { display: block; width: 260px; max-width: 100%; height: auto; margin: 1rem auto 0; }
 .hero__lead { font-size: 1.25rem; color: var(--green-tint); max-width: 55ch; }
 .hero__meta {
   display: flex;
