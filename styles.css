@@ -172,20 +172,15 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
 }
 .nav__brand:hover { color: var(--white); text-decoration: none; }
-.nav__mark {
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
+.nav__logo {
   background: var(--eu-gold);
-  color: var(--green-deep);
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.02em;
-  font-family: var(--font-sans);
+  border-radius: 5px;
+  padding: 5px 9px;
+  display: inline-flex;
+  align-items: center;
   flex-shrink: 0;
 }
+.nav__logo img { height: 28px; width: auto; display: block; }
 .nav__links {
   display: flex;
   align-items: center;
@@ -283,6 +278,7 @@ img { max-width: 100%; display: block; }
     -webkit-mask-image: none; mask-image: none; }
 }
 .hero h1 { color: var(--white); max-width: 18ch; }
+.about-logo { display: block; width: 340px; max-width: 100%; height: auto; margin: 0 auto 1.5rem; }
 .hero__lead { font-size: 1.25rem; color: var(--green-tint); max-width: 55ch; }
 .hero__meta {
   display: flex;
