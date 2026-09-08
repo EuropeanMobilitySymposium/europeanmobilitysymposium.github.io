@@ -478,6 +478,65 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow);
 }
 
+/* Interactive venue map (Leaflet + OpenStreetMap) */
+#venue-map {
+  width: 100%;
+  height: 480px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  z-index: 0;
+}
+/* Desaturate only the map tiles; markers stay in colour */
+#venue-map .leaflet-tile-pane { filter: grayscale(1) contrast(0.92) brightness(1.04); }
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.75rem;
+  margin-top: 1.25rem;
+}
+.map-legend span { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.92rem; color: var(--slate); }
+.map-legend i {
+  width: 18px; height: 18px; border-radius: 50%;
+  border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.3); flex-shrink: 0;
+}
+.sw-conf { background: var(--green-deep); border-color: var(--eu-gold) !important; }
+.sw-hotel { background: #185FA5; }
+.sw-dining { background: #D85A30; }
+.sw-todo { background: #0F8A6D; }
+
+/* Map marker glyphs */
+.mk {
+  width: 28px; height: 28px; border-radius: 50%;
+  display: grid; place-items: center;
+  border: 2px solid #fff; color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.45);
+}
+.mk svg { width: 15px; height: 15px; }
+.mk--hotel { background: #185FA5; }
+.mk--dining { background: #D85A30; }
+.mk--todo { background: #0F8A6D; }
+.mk--conf { width: 42px; height: 42px; background: var(--green-deep); border: 3px solid var(--eu-gold); color: var(--eu-gold); }
+.mk--conf svg { width: 22px; height: 22px; }
+
+/* Place lists */
+.place-list {
+  list-style: none; padding: 0; margin: 1.5rem 0 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem;
+}
+.place-list li {
+  padding: 1rem 1.2rem; background: var(--white);
+  border: 1px solid rgba(0, 60, 60, 0.1); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.place-list strong { display: block; color: var(--green-deep); margin-bottom: 0.15rem; }
+.place-list span { font-size: 0.9rem; color: var(--slate); }
+.place-group + .place-group { margin-top: 2.5rem; }
+.place-group h3 { display: flex; align-items: center; gap: 0.6rem; }
+.place-group h3 i {
+  width: 16px; height: 16px; border-radius: 50%;
+  border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
 /* --------------------------------------------------------------------------
    Past editions
    -------------------------------------------------------------------------- */
