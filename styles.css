@@ -324,7 +324,7 @@ img { max-width: 100%; display: block; }
 /* --------------------------------------------------------------------------
    Program / schedule
    -------------------------------------------------------------------------- */
-.schedule { border-left: 3px solid var(--green-tint); margin-left: 0.5rem; }
+.schedule { border-left: 3px solid var(--green-tint); margin-left: 0.5rem; margin-bottom: 2.5rem; }
 .schedule__item {
   position: relative;
   padding: 0 0 2rem 2rem;
@@ -365,7 +365,13 @@ img { max-width: 100%; display: block; }
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--green-tint);
 }
-.day-heading + .schedule { margin-bottom: 3rem; }
+.phase {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--green-highlight);
+  margin: 0 0 1.25rem;
+}
 
 /* --------------------------------------------------------------------------
    Speakers / attendees
