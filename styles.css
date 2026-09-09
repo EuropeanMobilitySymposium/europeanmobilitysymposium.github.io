@@ -387,6 +387,13 @@ img { max-width: 100%; display: block; }
 }
 .schedule__item--break::before { background: #E0A800; }
 
+.day-heading {
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--green-tint);
+}
+.day-heading + .schedule { margin-bottom: 3rem; }
+
 .day-tabs {
   display: flex;
   flex-wrap: wrap;

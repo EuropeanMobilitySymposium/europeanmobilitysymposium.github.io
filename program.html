@@ -42,12 +42,8 @@
 
     <section class="section">
       <div class="container">
-        <div class="day-tabs" role="tablist" aria-label="Programme days">
-          <button class="day-tab is-active" data-day="day1" role="tab" aria-selected="true">Day 1 &middot; 23 Sep</button>
-          <button class="day-tab" data-day="day2" role="tab" aria-selected="false">Day 2 &middot; 24 Sep</button>
-        </div>
-
-        <div class="schedule" id="day1" role="tabpanel">
+        <h2 class="day-heading">Day 1 &middot; 23 September</h2>
+        <div class="schedule" id="day1">
           <div class="schedule__item">
             <p class="schedule__time">09:30 &ndash; 10:30</p>
             <h3 class="schedule__title">Morning session 1</h3>
@@ -78,7 +74,8 @@
           </div>
         </div>
 
-        <div class="schedule" id="day2" role="tabpanel" hidden>
+        <h2 class="day-heading">Day 2 &middot; 24 September</h2>
+        <div class="schedule" id="day2">
           <div class="schedule__item">
             <p class="schedule__time">09:30 &ndash; 10:30</p>
             <h3 class="schedule__title">Morning session 1</h3>
@@ -142,20 +139,6 @@
           toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
       }
-
-      var tabs = document.querySelectorAll('.day-tab');
-      tabs.forEach(function (tab) {
-        tab.addEventListener('click', function () {
-          tabs.forEach(function (t) {
-            t.classList.remove('is-active');
-            t.setAttribute('aria-selected', 'false');
-            document.getElementById(t.dataset.day).hidden = true;
-          });
-          tab.classList.add('is-active');
-          tab.setAttribute('aria-selected', 'true');
-          document.getElementById(tab.dataset.day).hidden = false;
-        });
-      });
     })();
   </script>
 </body>
