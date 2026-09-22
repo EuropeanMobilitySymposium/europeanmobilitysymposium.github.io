@@ -348,6 +348,15 @@ img { max-width: 100%; display: block; }
 }
 .schedule__title { margin: 0.15rem 0 0.25rem; font-size: 1.15rem; }
 .schedule__desc { color: var(--slate); font-size: 0.92rem; line-height: 1.55; margin: 0.25rem 0 0; max-width: 62ch; }
+.schedule__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--green-highlight);
+  text-decoration: none;
+}
+.schedule__link:hover { text-decoration: underline; }
 
 .schedule__item--break .schedule__title {
   display: inline-block;
